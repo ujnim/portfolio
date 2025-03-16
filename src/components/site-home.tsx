@@ -1,8 +1,13 @@
 "use client"
 import React, { useEffect, useState } from "react"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { useLanguage } from "@/contexts/LanguageContext"
+import { motion } from "framer-motion"
+import Link from "next/link"
 
 export default function SiteHome() {
+    const { translations: t } = useLanguage()
+
     const items = Array.from({ length: 20 })
 
     const [projects, setProjects] = useState([]);

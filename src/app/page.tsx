@@ -6,6 +6,8 @@ import ProjectsSection from "@/components/sections/projects"
 import ContactSection from "@/components/sections/contact"
 import Navbar from "@/components/Navbar"
 import ExperienceSection from '@/components/sections/experience'
+import SiteHeader from "@/components/site-header"
+import SiteHome from "@/components/site-home"
 
 export default function Home() {
     return (

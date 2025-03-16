@@ -1,7 +1,7 @@
 'use client'
 import { useLanguage } from '@/contexts/LanguageContext'
 import { motion } from 'framer-motion'
-import { FaEnvelope, FaPhone, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const contactInfo = [
     {

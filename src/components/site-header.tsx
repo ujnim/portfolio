@@ -1,8 +1,21 @@
 "use client"
 import React from "react"
+import { useLanguage } from "@/contexts/LanguageContext"
+import {
+    NavigationMenu,
+    NavigationMenuContent,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuTrigger,
+    navigationMenuTriggerStyle,
+} from "@/components/ui/navigation-menu"
+import { cn } from "@/lib/utils"
+import { motion } from "framer-motion"
+import Link from "next/link"
 
 import { Separator } from "@/components/ui/separator"
-import { NavigationMenu, NavigationMenuContent, NavigationMenuIndicator, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, NavigationMenuViewport } from "@/components/ui/navigation-menu"
+import { NavigationMenuViewport } from "@/components/ui/navigation-menu"
 
 export default function SiteHeader() {
     return (
