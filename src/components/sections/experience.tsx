@@ -8,6 +8,7 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa"
 export default function ExperienceSection() {
     const [expandedProject, setExpandedProject] = useState<number | null>(0)
     const { translations: t } = useLanguage()
+    const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : ''
 
     const toggleProject = (index: number) => {
         setExpandedProject(expandedProject === index ? null : index)
@@ -31,7 +32,7 @@ export default function ExperienceSection() {
                     name: t.experience.jobs[0]?.projects?.[0]?.name,
                     period: t.experience.jobs[0]?.projects?.[0]?.period,
                     description: t.experience.jobs[0]?.projects?.[0]?.description,
-                    image: "/images/sale-dashboard.png",
+                    image: `${basePath}/images/sale-dashboard.png`,
                     tech: ["Next.js", "Node.js", "MySQL", "Tailwind CSS", "Power Automate"],
                     highlights: t.experience.jobs[0]?.projects?.[0]?.highlights ?? [],
                 },
@@ -39,7 +40,7 @@ export default function ExperienceSection() {
                     name: t.experience.jobs[0]?.projects?.[1]?.name,
                     period: t.experience.jobs[0]?.projects?.[1]?.period,
                     description: t.experience.jobs[0]?.projects?.[1]?.description,
-                    image: "/images/app.png",
+                    image: `${basePath}/images/app.png`,
                     tech: ["SwiftUI"],
                     highlights: t.experience.jobs[0]?.projects?.[1]?.highlights ?? [],
                 },
@@ -47,7 +48,7 @@ export default function ExperienceSection() {
                     name: t.experience.jobs[0]?.projects?.[2]?.name,
                     period: t.experience.jobs[0]?.projects?.[2]?.period,
                     description: t.experience.jobs[0]?.projects?.[2]?.description,
-                    image: "/images/admin-portal.png",
+                    image: `${basePath}/images/admin-portal.png`,
                     tech: ["Next.js", "Redux", "Python", "PostgreSQL"],
                     highlights: t.experience.jobs[0]?.projects?.[2]?.highlights ?? [],
                 },
@@ -55,7 +56,7 @@ export default function ExperienceSection() {
                     name: t.experience.jobs[0]?.projects?.[3]?.name,
                     period: t.experience.jobs[0]?.projects?.[3]?.period,
                     description: t.experience.jobs[0]?.projects?.[3]?.description,
-                    image: "/images/silverwell.png",
+                    image: `${basePath}/images/silverwell.png`,
                     tech: ["Laravel 8", "Vue.js", "MySQL", "LINE LIFF"],
                     highlights: t.experience.jobs[0]?.projects?.[3]?.highlights ?? [],
                 },
@@ -63,7 +64,7 @@ export default function ExperienceSection() {
                     name: t.experience.jobs[0]?.projects?.[4]?.name,
                     period: t.experience.jobs[0]?.projects?.[4]?.period,
                     description: t.experience.jobs[0]?.projects?.[4]?.description,
-                    image: "/images/svc.png",
+                    image: `${basePath}/images/svc.png`,
                     tech: ["Laravel 7", "MySQL", "Line Notify"],
                     highlights: t.experience.jobs[0]?.projects?.[4]?.highlights ?? [],
                 },
@@ -80,7 +81,7 @@ export default function ExperienceSection() {
                     name: t.experience.jobs[1]?.projects?.[0]?.name,
                     period: t.experience.jobs[1]?.projects?.[0]?.period,
                     description: t.experience.jobs[1]?.projects?.[0]?.description,
-                    image: "/images/svc.png",
+                    image: `${basePath}/images/svc.png`,
                     tech: ["Laravel 7", "MySQL", "Line Notify"],
                     highlights: t.experience.jobs[1]?.projects?.[0]?.highlights ?? [],
                 },
@@ -105,7 +106,7 @@ export default function ExperienceSection() {
                     name: t.experience.jobs[2]?.projects?.[1]?.name,
                     period: t.experience.jobs[2]?.projects?.[1]?.period,
                     description: t.experience.jobs[2]?.projects?.[1]?.description,
-                    image: "/images/baac2.png",
+                    image: `${basePath}/images/baac2.png`,
                     tech: ["Biz Flow", "MySQL"],
                     highlights: t.experience.jobs[2]?.projects?.[1]?.highlights ?? [],
                 },
