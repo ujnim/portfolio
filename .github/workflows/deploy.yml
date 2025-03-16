@@ -42,9 +42,13 @@ jobs:
 
       - name: Install dependencies
         run: bun install
+        env:
+          GITHUB_PAGES: true
 
       - name: Build with Next.js
         run: bun run build
+        env:
+          GITHUB_PAGES: true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
