@@ -1,32 +1,21 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    output: 'export',
     images: {
+        unoptimized: true,
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'avatars.githubusercontent.com',
-                pathname: '/**',
-            },
-            {
-                protocol: 'https',
-                hostname: 'www.google.com',
-            },
-            {
-                protocol: 'https',
-                hostname: 'lh3.googleusercontent.com',
-            },
-            {
-                protocol: 'https',
                 hostname: 'organdonate.redcross.or.th',
+                port: '',
+                pathname: '/assets/images/seo/**',
             },
             {
                 protocol: 'https',
-                hostname: 'stemcellthai.redcross.or.th',
+                hostname: 'scontent.fbkk5-4.fna.fbcdn.net',
+                port: '',
+                pathname: '/v/**',
             },
-            {
-                protocol: 'https',
-                hostname: '**.fbcdn.net',
-            }
         ],
     },
 }
