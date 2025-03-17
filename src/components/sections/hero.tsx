@@ -2,9 +2,11 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { useLanguage } from '@/contexts/LanguageContext'
+import { FaDownload } from 'react-icons/fa'
 
 export default function HeroSection() {
     const { translations: t } = useLanguage()
+    const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : ''
     
     return (
         <section className="text-center">
@@ -66,6 +68,16 @@ export default function HeroSection() {
                         whileTap={{ scale: 0.95 }}
                     >
                         {t.hero.cta.secondary}
+                    </motion.a>
+                    <motion.a
+                        href={`${basePath}/resume.pdf`}
+                        download
+                        className="inline-flex items-center gap-2 px-6 py-3 bg-transparent border-2 border-blue-600 text-blue-600 dark:border-blue-400 dark:text-blue-400 rounded-lg hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 transition-colors"
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                    >
+                        <FaDownload className="w-4 h-4" />
+                        {t.hero.cta.resume}
                     </motion.a>
                 </motion.div>
             </motion.div>

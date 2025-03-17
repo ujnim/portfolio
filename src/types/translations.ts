@@ -40,6 +40,7 @@ export interface HeroTranslations {
     cta: {
         primary: string;
         secondary: string;
+        resume: string;
     };
 }
 

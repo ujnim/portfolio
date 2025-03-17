@@ -15,7 +15,8 @@ export const en: Translations = {
         company: 'The Siam Cement Public Co., Ltd',
         cta: {
             primary: 'View Projects',
-            secondary: 'Contact Me'
+            secondary: 'Contact Me',
+            resume: 'Resume'
         },
     },
     about: {
