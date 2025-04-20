@@ -17,7 +17,7 @@ export default function HeroSection() {
             >
                 <div className="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto mt-4 sm:mt-8">
                     <Image
-                        src={process.env.NEXT_PUBLIC_IMAGE_PROFILE as string}
+                        src="https://profile.line-scdn.net/0hPPLiU8xUD39hEBsLIM1xABFADBVCYVZtT35FTlUXVElbd0l9RSIUSlFEUEdbc00sTyNASVIQBB9tA3gZf0bzS2YgUUtaJ04vSXFFnA"
                         alt="MinJu Profile"
                         fill
                         className="rounded-full object-cover shadow-lg ring-4 ring-blue-100 dark:ring-blue-900"
@@ -69,7 +69,7 @@ export default function HeroSection() {
                         {t.hero.cta.secondary}
                     </motion.a>
                     <motion.a
-                        href={`resume/resume.pdf`}
+                        href='https://drive.google.com/file/d/1lrFQWdocrh8yunfkr9IMBZVogEu2-DXE/view?usp=sharing'
                         download
                         className="inline-flex items-center gap-2 px-6 py-3 bg-transparent border-2 border-blue-600 text-blue-600 dark:border-blue-400 dark:text-blue-400 rounded-lg hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 transition-colors"
                         whileHover={{ scale: 1.05 }}
