@@ -6,7 +6,7 @@ import { FaDownload } from 'react-icons/fa'
 
 export default function HeroSection() {
     const { translations: t } = useLanguage()
-    const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : ''
+    const basePath = process.env.NODE_ENV === 'production' ? '/resume' : ''
     
     return (
         <section className="text-center">
@@ -18,7 +18,7 @@ export default function HeroSection() {
             >
                 <div className="relative w-40 h-40 sm:w-48 sm:h-48 mx-auto mt-4 sm:mt-8">
                     <Image
-                        src={"https://avatars.githubusercontent.com/u/32573151?v=4"}
+                        src={process.env.NEXT_PUBLIC_IMAGE_PROFILE as string}
                         alt="MinJu Profile"
                         fill
                         className="rounded-full object-cover shadow-lg ring-4 ring-blue-100 dark:ring-blue-900"
@@ -54,8 +54,8 @@ export default function HeroSection() {
                     transition={{ delay: 0.4 }}
                 >
                     <motion.a
-                        href="#projects"
-                        className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors"
+                        href="#experience"
+                        className="content-center px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 transition-colors"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
@@ -63,14 +63,14 @@ export default function HeroSection() {
                     </motion.a>
                     <motion.a
                         href="#contact"
-                        className="px-6 py-3 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 transition-colors"
+                        className="content-center px-6 py-3 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700 transition-colors"
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
                         {t.hero.cta.secondary}
                     </motion.a>
                     <motion.a
-                        href={`${basePath}/resume.pdf`}
+                        href={`${basePath}/resume/resume.pdf`}
                         download
                         className="inline-flex items-center gap-2 px-6 py-3 bg-transparent border-2 border-blue-600 text-blue-600 dark:border-blue-400 dark:text-blue-400 rounded-lg hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 transition-colors"
                         whileHover={{ scale: 1.05 }}

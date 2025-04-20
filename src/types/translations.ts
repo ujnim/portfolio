@@ -3,6 +3,8 @@ export interface Project {
     period: string;
     description: string;
     highlights: string[];
+    tech: string[];
+    image?: string;
 }
 
 export interface Job {

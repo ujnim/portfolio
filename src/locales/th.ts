@@ -1,5 +1,5 @@
 import { Translations } from "@/types/translations";
-
+const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : ''
 export const th: Translations = {
     nav: {
         home: "หน้าแรก",
@@ -52,13 +52,36 @@ export const th: Translations = {
                 ],
                 projects: [
                     {
+                        name: "ESA Dashboard",
+                        period: "มี.ค. 2568 - ปัจจุบัน",
+                        description: "พัฒนาระบบติดตามการทำงานของช่างแบบเรียลไทม์สำหรับทีมติดตั้ง",
+                        highlights: [
+                            "พัฒนาแดชบอร์ดติดตามการทำงานของช่างแบบโต้ตอบเรียลไทม์ผ่านอุปกรณ์ IoT"
+                        ],
+                        tech: ["Next.js", "Node.js", "Postgres", "Tailwind CSS", "WebSocket"],
+                        image: `${basePath}/images/Onnex_Logo.jpg`,
+                    },
+                    {
+                        name: "Home Automation Dashboard",
+                        period: "ก.พ. 2568 - ก.พ. 2568",
+                        description: "พัฒนาระบบวิเคราะห์และติดตามผลการขายแบบเรียลไทม์สำหรับทีม Home Automation",
+                        highlights: [
+                            "พัฒนาแดชบอร์ดข้อมูลการขายแบบโต้ตอบเรียลไทม์",
+                            "สร้างระบบนำเข้าข้อมูลอัตโนมัติจาก Excel เพื่อปรับปรุงขั้นตอนการทำงาน"
+                        ],
+                        tech: ["Next.js", "Node.js", "MySQL", "Tailwind CSS", "Power Automate"],
+                        image: `${basePath}/images/Onnex_Logo.jpg`,
+                    },
+                    {
                         name: "Sale Performance Dashboard",
-                        period: "ม.ค. 2568 - ปัจจุบัน",
+                        period: "ม.ค. 2568 - ม.ค. 2568",
                         description: "พัฒนาระบบวิเคราะห์และติดตามผลการขายแบบเรียลไทม์สำหรับทีมขาย",
                         highlights: [
                             "พัฒนาแดชบอร์ดข้อมูลการขายแบบโต้ตอบเรียลไทม์",
                             "สร้างระบบนำเข้าข้อมูลอัตโนมัติจาก Excel เพื่อปรับปรุงขั้นตอนการทำงาน"
-                        ]
+                        ],
+                        tech: ["Next.js", "Node.js", "MySQL", "Tailwind CSS", "Power Automate"],
+                        image: `${basePath}/images/Onnex_Logo.jpg`,
                     },
                     {
                         name: "Smart Living+",
@@ -67,7 +90,9 @@ export const th: Translations = {
                         highlights: [
                             "พัฒนาระบบควบคุมเครื่องฟอกอากาศอัจฉริยะ (AAQ) สำหรับที่พักอาศัย",
                             "ออกแบบและพัฒนา UI/UX ที่ใช้งานง่ายสำหรับการควบคุมอุปกรณ์"
-                        ]
+                        ],
+                        tech: ["SwiftUI"],
+                        image: `${basePath}/images/app.png`,
                     },
                     {
                         name: "Admin Portal",
@@ -77,7 +102,9 @@ export const th: Translations = {
                             "พัฒนาแดชบอร์ดวิเคราะห์แบบโต้ตอบสำหรับวิเคราะห์พฤติกรรมผู้ใช้",
                             "สร้างระบบติดตามการใช้พลังงานในบ้านแบบเรียลไทม์",
                             "พัฒนา RESTful APIs สำหรับการรวมข้อมูลอุปกรณ์ IoT"
-                        ]
+                        ],
+                        image: `${basePath}/images/wedo.png`,
+                        tech: ["Next.js", "Redux", "Python", "PostgreSQL"],
                     },
                     {
                         name: "LINE LIFF (DoCare)",
@@ -87,7 +114,9 @@ export const th: Translations = {
                             "พัฒนาระบบบันทึกและติดตามข้อมูลสุขภาพแบบเรียลไทม์",
                             "สร้างระบบแจ้งเตือนฉุกเฉินและจัดการสมาชิกในครอบครัว",
                             "พัฒนาระบบแจ้งเตือนผ่าน LINE แบบอัตโนมัติ"
-                        ]
+                        ],
+                        image: `${basePath}/images/docare3.png`,
+                        tech: ["Laravel 8", "Vue.js", "MySQL", "LINE LIFF"],
                     },
                     {
                         name: "DoCare",
@@ -97,7 +126,9 @@ export const th: Translations = {
                             "พัฒนาระบบลงทะเบียนและจัดการผู้ป่วยแบบครบวงจร",
                             "สร้างระบบจัดการอุปกรณ์ทางการแพทย์",
                             "พัฒนา API Gateway สำหรับการเชื่อมต่ออุปกรณ์ IoT ทางการแพทย์"
-                        ]
+                        ],
+                        image: `${basePath}/images/docare2.png`,
+                        tech: ["Laravel 7", "MySQL", "Line Notify"],
                     }
                 ]
             },
@@ -119,7 +150,9 @@ export const th: Translations = {
                             "พัฒนาระบบลงทะเบียนผู้ป่วยแบบหลายสาขา",
                             "สร้างระบบจัดการอุปกรณ์ทางการแพทย์แบบเรียลไทม์",
                             "พัฒนา RESTful APIs สำหรับการเชื่อมต่อข้อมูลอุปกรณ์ IoT"
-                        ]
+                        ],
+                        image: `${basePath}/images/docare2.png`,
+                        tech: ["Laravel 7", "MySQL", "Line Notify"],
                     }
                 ]
             },
@@ -139,7 +172,9 @@ export const th: Translations = {
                         highlights: [
                             "พัฒนาระบบจับคู่ผู้บริจาคและผู้รับบริจาคแบบอัตโนมัติ",
                             "สร้างระบบติดตามสถานะการบริจาคแบบเรียลไทม์"
-                        ]
+                        ],
+                        image: "https://organdonate.redcross.or.th/assets/images/seo/og_facebook.jpg",
+                        tech: ["Biz Flow", "Oracle"],
                     },
                     {
                         name: "ระบบจัดการเอกสาร - ธ.ก.ส.",
@@ -149,7 +184,9 @@ export const th: Translations = {
                             "พัฒนาระบบจัดการเอกสารดิจิทัลแบบหลายสาขา",
                             "สร้างระบบติดตามสถานะเอกสารแบบเรียลไทม์",
                             "พัฒนาระบบลายเซ็นอิเล็กทรอนิกส์และการจัดการขั้นตอนการอนุมัติ"
-                        ]
+                        ],
+                        image: `${basePath}/images/baac2.png`,
+                        tech: ["Biz Flow", "MySQL"],
                     },
                     {
                         name: "ระบบบริจาคสเต็มเซลล์ (สภากาชาดไทย)",
@@ -159,7 +196,9 @@ export const th: Translations = {
                             "พัฒนาระบบจับคู่ผู้บริจาคและผู้รับบริจาคสเต็มเซลล์แบบอัตโนมัติ",
                             "สร้างระบบติดตามสถานะการบริจาคแบบเรียลไทม์",
                             "พัฒนาระบบแจ้งเตือนทางอีเมลแบบอัตโนมัติ"
-                        ]
+                        ],
+                        image: "https://stemcellthai.redcross.or.th/wp-content/uploads/2021/05/cropped-cropped-Stem-cell-logo-removebg.png",
+                        tech: ["Biz Flow", "Oracle"],
                     }
                 ]
             },

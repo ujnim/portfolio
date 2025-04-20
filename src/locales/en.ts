@@ -1,4 +1,5 @@
 import { Translations } from "@/types/translations";
+const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : ''
 
 export const en: Translations = {
     nav: {
@@ -52,13 +53,36 @@ export const en: Translations = {
                 ],
                 projects: [
                     {
+                        name: "ESA Dashboard",
+                        period: "Mar 2025 - Present",
+                        description: "Developed a real-time technician tracking system for the installation team",
+                        highlights: [
+                            "Developed an interactive real-time dashboard for technician tracking through IoT devices"
+                        ],
+                        tech: ["Next.js", "Node.js", "Postgres", "Tailwind CSS" , "WebSocket"],
+                        image: `${basePath}/images/Onnex_Logo.jpg`,
+                    },
+                    {
+                        name: "Home Automation Dashboard",
+                        period: "Feb 2025 - Feb 2025",
+                        description: "Developed a real-time sales analytics and monitoring system for the Home Automation team",
+                        highlights: [
+                            "Developed an interactive real-time sales data dashboard",
+                            "Created an automated Excel data import system to streamline workflows"
+                        ],
+                        tech: ["Next.js", "Node.js", "MySQL", "Tailwind CSS", "Power Automate"],
+                        image: `${basePath}/images/Onnex_Logo.jpg`,
+                    },
+                    {
                         name: "Sale Performance Dashboard",
-                        period: "Jan 2025 - Present",
+                        period: "Jan 2025 - Jan 2025",
                         description: "Developed a real-time sales performance analytics and monitoring system for the Sales team",
                         highlights: [
                             "Developed an interactive real-time sales data dashboard",
                             "Created an automated data import system from Excel to streamline workflows"
-                        ]
+                        ],
+                        tech: ["Next.js", "Node.js", "MySQL", "Tailwind CSS", "Power Automate"],
+                        image: `${basePath}/images/Onnex_Logo.jpg`,
                     },
                     {
                         name: "Smart Living+",
@@ -67,7 +91,9 @@ export const en: Translations = {
                         highlights: [
                             "Developed a smart air purifier (AAQ) control system for residential use",
                             "Designed and developed user-friendly UI/UX for device control"
-                        ]
+                        ],
+                        tech: ["SwiftUI"],
+                        image: `${basePath}/images/app.png`,
                     },
                     {
                         name: "Admin Portal",
@@ -77,7 +103,9 @@ export const en: Translations = {
                             "Developed interactive analytics dashboard for user behavior analysis",
                             "Built real-time home energy consumption monitoring system",
                             "Developed RESTful APIs for IoT device data integration"
-                        ]
+                        ],
+                        image: `${basePath}/images/wedo.png`,
+                        tech: ["Next.js", "Redux", "Python", "PostgreSQL"],
                     },
                     {
                         name: "LINE LIFF (DoCare)",
@@ -87,7 +115,9 @@ export const en: Translations = {
                             "Developed real-time health data recording and monitoring system",
                             "Created emergency alert system and family member management",
                             "Implemented automated LINE notification system"
-                        ]
+                        ],
+                        image: `${basePath}/images/docare3.png`,
+                        tech: ["Laravel 8", "Vue.js", "MySQL", "LINE LIFF"],
                     },
                     {
                         name: "DoCare",
@@ -97,7 +127,9 @@ export const en: Translations = {
                             "Developed comprehensive patient registration and management system",
                             "Created medical device management system",
                             "Developed API Gateway for medical IoT device integration"
-                        ]
+                        ],
+                        image: `${basePath}/images/docare2.png`,
+                        tech: ["Laravel 7", "MySQL", "Line Notify"],
                     }
                 ]
             },
@@ -119,7 +151,9 @@ export const en: Translations = {
                             "Developed multi-branch patient registration system",
                             "Created real-time medical device management system",
                             "Developed RESTful APIs for IoT device data integration"
-                        ]
+                        ],
+                        image: `${basePath}/images/docare2.png`,
+                        tech: ["Laravel 7", "MySQL", "Line Notify"],
                     }
                 ]
             },
@@ -139,7 +173,9 @@ export const en: Translations = {
                         highlights: [
                             "Developed automated donor-recipient matching system",
                             "Created real-time donation status tracking system"
-                        ]
+                        ],
+                        image: "https://organdonate.redcross.or.th/assets/images/seo/og_facebook.jpg",
+                        tech: ["Biz Flow", "Oracle"],
                     },
                     {
                         name: "Document Management System - BAAC",
@@ -149,7 +185,9 @@ export const en: Translations = {
                             "Developed multi-branch digital document management system",
                             "Created real-time document status tracking system",
                             "Developed electronic signature system and approval workflow management"
-                        ]
+                        ],
+                        image: `${basePath}/images/baac2.png`,
+                        tech: ["Biz Flow", "MySQL"],
                     },
                     {
                         name: "Stem Cell Donation System (Thai Red Cross)",
@@ -159,7 +197,9 @@ export const en: Translations = {
                             "Developed automated stem cell donor-recipient matching system",
                             "Created real-time donation status tracking system",
                             "Implemented automated email notification system"
-                        ]
+                        ],
+                        image: "https://stemcellthai.redcross.or.th/wp-content/uploads/2021/05/cropped-cropped-Stem-cell-logo-removebg.png",
+                        tech: ["Biz Flow", "Oracle"],
                     }
                 ]
             },
