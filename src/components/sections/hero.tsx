@@ -6,7 +6,6 @@ import { FaDownload } from 'react-icons/fa'
 
 export default function HeroSection() {
     const { translations: t } = useLanguage()
-    const basePath = process.env.NODE_ENV === 'production' ? '/resume' : ''
     
     return (
         <section className="text-center">
@@ -70,7 +69,7 @@ export default function HeroSection() {
                         {t.hero.cta.secondary}
                     </motion.a>
                     <motion.a
-                        href={`${basePath}/resume/resume.pdf`}
+                        href={`resume/resume.pdf`}
                         download
                         className="inline-flex items-center gap-2 px-6 py-3 bg-transparent border-2 border-blue-600 text-blue-600 dark:border-blue-400 dark:text-blue-400 rounded-lg hover:bg-blue-600 hover:text-white dark:hover:bg-blue-400 dark:hover:text-gray-900 transition-colors"
                         whileHover={{ scale: 1.05 }}
